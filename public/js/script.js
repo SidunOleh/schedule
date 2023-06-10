@@ -32,8 +32,10 @@ function getSchedule(e) {
             start,
             end,
         },
-        success: data =>
-            $('.schedule').replaceWith(data.schedule_html),
+        success: data => {
+			$('.schedule').replaceWith(data.schedule_html)
+			timeProgress()
+		},
         error: res =>
             $('.schedule').removeClass('loading'),
     })
