@@ -135,7 +135,7 @@
 .timeprogress {
     position: absolute;
     top: 0;
-    left: 72px;
+    left: 68px;
     width: calc(25% - 15px);
     height: 1px;
     background-color: #FF4136;
